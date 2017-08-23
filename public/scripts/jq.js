@@ -23,7 +23,7 @@ setInterval(function(){
   if(imagePoint == 4){
     imagePoint = 1;
   }
-},5000);
+},8000);
 var once = 0;
 
 // setInterval(function(){
