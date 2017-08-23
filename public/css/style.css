@@ -13,16 +13,28 @@
 }
 body{
   padding:0;
-  padding-bottom:40px;
   margin:0;
+  position:relative;
+}
+
+.nav{
+  width:100vw;
+  position:fixed;
+  opacity:0;
+  height:100px;
+  background-color:red;
+  transition:opacity 500ms ease-in-out;
+  z-index:100;
+}
+.contain{
+  padding-top:40px;
+
+  padding-bottom:40px;
   width:100vw;
   height:100vh;
-  position: absolute;
-  /*background-image:url('/img/bgimg.jpg');
-*/
+  position: relative;
 }
 .logo-container{
-  margin-top:40px;
   height:200px;
   width:80%;
   margin-left:50px;
@@ -137,9 +149,10 @@ li{
 */
 
 .gallery{
+  top:0px;
   padding:0;
   margin:0;
-  position:fixed;
+  position:absolute;
   z-index:-1;
   width:100vw;
   height:100vh;
@@ -151,11 +164,11 @@ li{
   width:100vw;
   height:100vh;
   z-index:-11;
-  background-position: center;
+  background-position: center -100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment:local;
-  /*transition:right 2s ease-in-out;*/
+  transition:right 2s ease-in-out;
 }
 .firstimage{
   background-image:url('/img/bgimg.jpg');
@@ -168,4 +181,35 @@ li{
 .thirdimage{
   background-image:url('/img/bgimg3.jpg');
   right:-200%;
+}
+
+/* Main- contain */
+
+.main-contain{
+  display:block;
+  position:absolute;
+  width:100vw;
+}
+.mission-statement-contain{
+  margin-top:150px;
+  position: relative;
+}
+
+.mission-statement-h1{
+  width:100%;
+  color:black;
+  font-weight:300;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0;
+  transition:opacity 800ms ease-in-out;
+}
+.mission-statement-p{
+  font-weight:100;
+  color:black;
+  width:100%;
+  text-align: center;
+  padding:0 20%;
+  opacity:0;
+  transition:opacity 800ms ease-in-out;
 }

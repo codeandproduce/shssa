@@ -84,6 +84,18 @@ lines: [
 ]
 });
 setTimeout(function() {
-lineMaker.animateLinesIn();
-}, 250);
+  lineMaker.animateLinesIn();
+  }, 250);
 })();
+
+
+$(document).scroll(function(){
+  $('.galleryitem').css('background-position','center '+(($(this).scrollTop()*0.7)-100)+'px');
+  if($(this).scrollTop() > ($('.contain').height()+100)/3){
+    $('.nav').css('opacity','1');
+    $('.mission-statement-h1').css('opacity','1');
+    $('.mission-statement-p').css('opacity','1');
+  }else{
+    $('.nav').css('opacity','0');
+  }
+});
