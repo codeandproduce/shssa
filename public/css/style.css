@@ -109,7 +109,7 @@ li{
 
 .link-label{
   position: relative;
-  padding-top:calc(9vw - 9vw/8 - 10px);
+  padding-top:calc(9vw - 9vw/8 - 3px);
   font-size:calc(9vw/4);
   width:100%;
   font-weight:300;
