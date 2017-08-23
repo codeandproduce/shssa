@@ -41,26 +41,26 @@ function toSecondImageGallery(){
   $('.secondimage').css('transition','all 2s ease-in-out');
   $('.secondimage').css('right','0');
 
-  $('.firstimage').css('right','-100%');
+  $('.firstimage').css('right','100%');
 
   $('.thirdimage').css('transition','all 0s ease-in-out');
-  $('.thirdimage').css('right','100%');
+  $('.thirdimage').css('right','-100%');
 }
 function toThirdImageGallery(){
   $('.thirdimage').css('transition','all 2s ease-in-out');
   $('.thirdimage').css('right','0');
-  $('.secondimage').css('right','-100%');
+  $('.secondimage').css('right','100%');
 
   $('.firstimage').css('transition','all 0s ease-in-out');
-  $('.firstimage').css('right','100%');
+  $('.firstimage').css('right','-100%');
 }
 function toFirstImageGallery(){
   $('.firstimage').css('transition','all 2s ease-in-out');
   $('.firstimage').css('right','0');
-  $('.thirdimage').css('right','-100%');
+  $('.thirdimage').css('right','100%');
 
   $('.secondimage').css('transition','all 0s ease-in-out');
-  $('.secondimage').css('right','100%');
+  $('.secondimage').css('right','-100%');
 }
 (function() {
   bodyWidth = $('body').width()
@@ -79,8 +79,8 @@ lines: [
 
   {top: 200, left: 0, width: '50vw', height: 3, color: '#a6c4ed', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 800, direction: 'LeftRight' }},
 
-  {top: 0, left: '58vw', width: 4, height: '17vh', color: 'rgba(255,255,255,0.7)', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 800, direction: 'TopBottom' }},
-  {top: '17vh', left: bodyWidth*0.58-46, width: 50, height: 4, color: 'rgba(255,255,255,0.7)', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 1800, direction: 'RightLeft' }},
+  {top: 0, left: '70vw', width: 4, height: '17vh', color: 'rgba(255,255,255,0.7)', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 800, direction: 'TopBottom' }},
+  {top: '17vh', left: bodyWidth*0.7-46, width: 50, height: 4, color: 'rgba(255,255,255,0.7)', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 1800, direction: 'RightLeft' }},
 ]
 });
 setTimeout(function() {

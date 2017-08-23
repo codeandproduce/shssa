@@ -2,6 +2,15 @@
   box-sizing: border-box;
   font-family:sans-serif;
 }
+*{
+  font-family:"Avenir Next";
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/public/Avenir Next.ttc");
+  src:
+  url("/Avenir Next.ttc") format("ttc");
+}
 body{
   padding:0;
   padding-bottom:40px;
@@ -38,7 +47,7 @@ body{
   color:white;
   font-weight:300;
   padding-right:200px;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 }
 .secondline{
   margin-left:30px;
@@ -53,7 +62,7 @@ body{
   position:relative;
   float:right;
   padding:40px;
-  padding-left:70px;
+  padding-left:100px;
 }
 ul{
   padding:0;
@@ -71,7 +80,7 @@ li{
   height:100%;
   position:absolute;
   background-color:white;
-  opacity:0.5;
+  opacity:0.4;
 }
 .one-link{
   width:200px;
@@ -153,9 +162,9 @@ li{
 }
 .secondimage{
   background-image:url('/img/bgimg2.jpg');
-  right:100%;
+  right:-100%;
 }
 .thirdimage{
   background-image:url('/img/bgimg3.jpg');
-  right:200%;
+  right:-200%;
 }
