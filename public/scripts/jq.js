@@ -70,17 +70,17 @@ function toFirstImageGallery(){
 var lineMaker = new LineMaker({
 position: 'absolute',
 lines: [
-  {top: 50, left: 67, width: '10vw', height: 3, color: 'rgba(255,255,255,0.7)', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 400, direction: 'LeftRight' }},
-  {top: 50, left: 67, width: 3, height: '70vh', color: 'rgba(255,255,255,0.7)', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 400, direction: 'BottomTop' }},
+  {top: 50, left: 67, width: '10vw', height: 1.5, color: 'rgba(255,255,255,0.7)', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 400, direction: 'LeftRight' }},
+  {top: 50, left: 67, width:1.5, height: '70vh', color: 'rgba(255,255,255,0.7)', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 400, direction: 'BottomTop' }},
 
 
-  {top: 20, left: 0, width: '28vw', height: 3, color: '#a6c4ed', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 400, direction: 'LeftRight' }},
-  {top: 20, left: '28vw', width: 3, height: 40, color: '#a6c4ed', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 800, direction: 'TopBottom' }},
+  {top: 20, left: 0, width: '28vw', height: 1.5, color: '#a6c4ed', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 400, direction: 'LeftRight' }},
+  {top: 20, left: '28vw', width: 1.5, height: 40, color: '#a6c4ed', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 800, direction: 'TopBottom' }},
 
   {top: 200, left: 0, width: '50vw', height: 3, color: '#a6c4ed', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 800, direction: 'LeftRight' }},
 
-  {top: 0, left: '70vw', width: 4, height: '17vh', color: 'rgba(255,255,255,0.7)', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 800, direction: 'TopBottom' }},
-  {top: '17vh', left: bodyWidth*0.7-46, width: 50, height: 4, color: 'rgba(255,255,255,0.7)', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 1800, direction: 'RightLeft' }},
+  {top: 0, left: '70vw', width: 2, height: '17vh', color: 'rgba(255,255,255,0.7)', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 800, direction: 'TopBottom' }},
+  {top: '17vh', left: bodyWidth*0.7-48, width: 50, height: 2, color: 'rgba(255,255,255,0.7)', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 1800, direction: 'RightLeft' }},
 ]
 });
 setTimeout(function() {
