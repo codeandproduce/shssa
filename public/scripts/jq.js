@@ -90,12 +90,24 @@ setTimeout(function() {
 
 
 $(document).scroll(function(){
-  $('.galleryitem').css('background-position','center '+(($(this).scrollTop()*0.7)-100)+'px');
+  $('.galleryitem').css('background-position','center '+(($(this).scrollTop()*0.4)-100)+'px');
   if($(this).scrollTop() > ($('.contain').height()+100)/3){
     $('.nav').css('opacity','1');
-    $('.mission-statement-h1').css('opacity','1');
-    $('.mission-statement-p').css('opacity','1');
-  }else{
+    $('.mission-img').css('opacity','1');
+  }
+  if($(this).scrollTop() > ($('.contain').height()+100/1.9)){
+    $('.mission-statement').css('opacity','1');
+  }
+  if($(this).scrollTop() > ($('.contain').height()*1.8)){
+    $('.what-we-do-h1').css('opacity','1');
+  }
+  if($(this).scrollTop() > ($('.contain').height()*1.9)){
+    $('.what-we-do-row').css('opacity','1');
+    $('.what-we-do-h1').css('margin-top','1');
+    $('.what-we-do-h2').css('margin-top','0');
+    $('.what-we-do-des').css('margin-top','50px');
+  }
+  else{
     $('.nav').css('opacity','0');
   }
 });
